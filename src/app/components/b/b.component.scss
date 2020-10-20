@@ -1,0 +1,15 @@
+.b {
+  border: 5px solid indianred;
+  border-radius: 5px;
+
+  width: 600px;
+  height: 200px;
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 8px;
+}

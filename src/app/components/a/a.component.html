@@ -1,0 +1,13 @@
+<ng-template #cValueTemplate>
+  <app-c [value]="value"></app-c>
+</ng-template>
+
+<ng-template #cObservableTemplate>
+  <app-c [value]="value$ | async"></app-c>
+</ng-template>
+
+<div class="a">
+  <p>I'm A</p>
+  <app-b [template]="cValueTemplate" [detach]="true" [timerDetect]="true"></app-b>
+  <app-b [template]="cObservableTemplate" [detach]="true"></app-b>
+</div>
